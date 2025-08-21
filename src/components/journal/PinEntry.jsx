@@ -24,12 +24,20 @@ const PinEntry = ({ onPinVerified }) => {
         This area is protected. Please enter your 4-digit PIN to continue.
       </p>
       <form onSubmit={handleSubmit} className="w-full max-w-xs">
+        
         <input
           type="password"
           value={pin}
           onChange={(e) => setPin(e.target.value)}
           maxLength="4"
-          className="input text-center text-2xl tracking-[1rem] w-full"
+          className="
+            input text-center text-2xl tracking-[1rem] w-full
+            text-neutral-900 dark:text-neutral-100
+            caret-neutral-800 dark:caret-neutral-100
+            bg-white dark:bg-neutral-900
+            border border-neutral-300 dark:border-neutral-700
+            focus:outline-none focus:ring-2 focus:ring-blue-500
+          "
           placeholder="••••"
         />
         {error && <p className="text-sm text-red-600 dark:text-red-400 mt-2">{error}</p>}
