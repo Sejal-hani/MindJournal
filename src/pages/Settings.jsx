@@ -205,7 +205,7 @@ const Settings = () => {
                 Password
               </div>
               <div className="flex items-center justify-between">
-                <div className="font-libre-baskerville font-medium text-neutral-800 dark:text-white">
+                <div className=""font-libre-baskerville font-medium text-neutral-800 dark:text-neutral-400">
                   ••••••••
                 </div>
                 <button
