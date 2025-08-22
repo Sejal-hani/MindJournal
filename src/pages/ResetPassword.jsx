@@ -219,7 +219,10 @@ const ResetPassword = () => {
                 required
                 value={formData.confirmPassword}
                 onChange={handleChange}
-                className="input pl-10 pr-10"
+                className="w-full p-3 border rounded-md bg-white dark:bg-neutral-800 
+             text-neutral-900 dark:text-white placeholder-neutral-400 
+             focus:outline-none focus:ring-2 focus:ring-primary-500 pl-10 pr-10"
+
                 placeholder="Confirm new password"
                 disabled={loading}
               />
